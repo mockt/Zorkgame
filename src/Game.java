@@ -139,13 +139,14 @@ public class Game {
     public void addItemsToRooms(List<Item> items) {
         Random rand = new Random();
         for (Item item : items) {
-            int randNum = rand.nextInt(6);
+            int randNum = rand.nextInt(7);
             switch (randNum) {
                 case 1 -> entry.addItemToRoom(item);
                 case 2 -> toilet.addItemToRoom(item);
                 case 3 -> livingroom.addItemToRoom(item);
                 case 4 -> bedroom.addItemToRoom(item);
                 case 5 -> office.addItemToRoom(item);
+                case 6 -> kitchen.addItemToRoom(item);
             }
         }
     }
