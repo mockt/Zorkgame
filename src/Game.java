@@ -36,7 +36,7 @@ public class Game {
 
         entry.setExits(null, toilet, bedroom, livingroom);
         toilet.setExits(null, null, null, entry);
-        livingroom.setExits(null, entry, null, null);
+        livingroom.setExits(null, entry, kitchen, null);
         bedroom.setExits(entry, office, null, null);
         office.setExits(null, null, null, bedroom);
         kitchen.setExits(livingroom, null,null,null);
